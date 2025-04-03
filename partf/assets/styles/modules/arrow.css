@@ -1,0 +1,67 @@
+.arrow {
+    height: 300px;
+    position: relative;
+    padding: 40px 0;
+    background-color: beige;
+}
+
+.arrow__line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #333;
+    z-index: 1;
+}
+
+.arrow__point {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    bottom: -100px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 150px;
+    z-index: 2;
+}
+
+.arrow__tooltip {
+    position: absolute;
+    bottom: 25px;
+    left: -40%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.arrow__point:hover .arrow__tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media (max-width: 1000px) {
+    .arrow__point {
+        bottom: -123px;
+        margin: 0 45px; 
+    }
+
+    .arrow__tooltip {
+        font-size: 12px;
+        bottom: 15px;
+    }
+
+    .arrow {
+        padding: 20px 0;
+    }
+
+    .arrow__tip {
+        right: -8px;
+    }
+}

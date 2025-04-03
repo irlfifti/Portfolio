@@ -1,0 +1,26 @@
+.future-plans {
+    background-color: #e5e5e5;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    cursor: default;
+}
+
+.future-plans__title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.future-plans__list {
+    list-style: none;
+    padding: 0;
+}
+
+.future-plans__list li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}

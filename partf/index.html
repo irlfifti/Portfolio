@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/vendors/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header" id="header-top">
+    <div class="header__container container">
+        <div class="header__logo logo">
+            <a href="./index.html" class="logo__link">
+                <img src="./assets/images/logo.png" alt="Логотип PORTFOLIO" class="logo__brand">
+            </a>
+        </div>
+
+        <nav class="header__navbar navigation" data-menu>
+            <menu class="navigation__menu">
+                <li class="navigation__menu-item">
+                    <a href="#" class="navigation__menu-link-us navigation__menu-link--active">Обо мне</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#" class="navigation__menu-link-portfolio">Портфолио</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#" class="navigation__menu-link-contact">Контакты</a>
+                </li>
+            </menu>
+        </nav>
+    </div>
+
+    <div class="header__main-title">
+        <img src="./assets/images/background.jpg" alt="Фон заголовка" class="header__background">
+        <h1 class="header__title">Мое портфолио</h1>
+    </div>
+</header>
+
+<main class="main" id="main">
+    <section class="myself" id="myself">
+            <div class="myself__card">
+                <h3 class="myself__title">Обо мне</h3>
+                <p class="myself__description">Меня зовут Рома мне 17, учусь на программиста и работаю в кол центре, живу в Краснослободцке.</p>
+            </div>
+            <div class="myself__card">
+                <h3 class="myself__title">Мои увлечения</h3>
+                <p class="myself__description">Хожу в зал, ранее увлекался дзюдо, так же люблю готовить и иногда играть.</p>
+            </div>
+            <div class="myself__card">
+                <h3 class="myself__title">Мои достижения</h3>
+                <p class="myself__description">Я отучился до 2ого кура без долгов, жму 80кг, не давно первый раз собрал ПК.</p>
+            </div>
+    </section>
+
+    <section class="arrow" id="arrow">
+        <div class="arrow__timeline">
+            <div class="arrow__line"></div>
+            <div class="arrow__point" data-event="Событие 1">
+                <div class="arrow__tooltip">
+                    <h3>2023 год лето</h3>
+                    <p>После огэ искал профессию к которой я ближе всего и нашел для себя программирование.</p>
+                </div>
+            </div>
+            <div class="arrow__point" data-event="Событие 2">
+                <div class="arrow__tooltip">
+                    <h3>2023 год начало учебного года</h3>
+                    <p>Поступил в Волгоградский технический колледж, рад новым знакомствам и своей специальности.</p>
+                </div>
+            </div>
+            <div class="arrow__point" data-event="Событие 3">
+                <div class="arrow__tooltip">
+                    <h3>2024 год конец учебного года</h3>
+                    <p>Прошел достаточно большой путь, сдача ссесий, новые люди, новые обязанности.</p>
+                </div>
+            </div>
+            <div class="arrow__point" data-event="Событие 4">
+                <div class="arrow__tooltip">
+                    <h3>2024-25 2ой курс</h3>
+                    <p>Начал работать, дальше хожу в зал, много нового в Колледже.</p>
+                </div>
+            </div>
+            <div class="arrow__tip">></div>
+        </div>
+    </section>
+
+    <<section class="future-plans">
+    <h2 class="future-plans__title">Планы на будущее</h2>
+    <ul class="future-plans__list">
+        <li>Разработать новые проекты с использованием современных технологий.</li>
+        <li>Устроиться на работу которая будет мне по душе.</li>
+        <li>Развиваться в программировании.</li>
+        <li>Добиться успехов в спорте.</li>
+    </ul>
+    </section>
+</main>
+<div class="accordion">
+ <div class="accordion-body">
+    <div class="accordion__item">
+        <div class="accordion__header" onclick="toggleAccordion(event)">
+            <span class="accordion__title">Моя национальность?</span>
+            <button class="accordion__button">✔</button>
+        </div>
+        <div class="accordion__content">Русский</div>
+    </div>
+    <div class="accordion__item">
+        <div class="accordion__header" onclick="toggleAccordion(event)">
+            <span class="accordion__title">В какой школе я учился?</span>
+            <button class="accordion__button">✔</button>
+        </div>
+        <div class="accordion__content">Гимназия №1</div>
+    </div>
+    <div class="accordion__item">
+        <div class="accordion__header" onclick="toggleAccordion(event)">
+            <span class="accordion__title">Мой любимый цвет?</span>
+            <button class="accordion__button">✔</button>
+        </div>
+        <div class="accordion__content">Серый</div>
+    </div>
+    <div class="accordion__item">
+        <div class="accordion__header" onclick="toggleAccordion(event)">
+            <span class="accordion__title">Мой любимый жанр в музыке?</span>
+            <button class="accordion__button">✔</button>
+        </div>
+        <div class="accordion__content">Хайпер-поп</div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/scripts/script.js"></script>
+
+<footer class="footer">
+    <div class="footer__contacts">
+        <h2 class="footer__contacts-title title-md">Мои контакты</h2>
+        <ul class="footer__contacts-list">
+            <li class="footer__contacts-item">
+                <a href="" class="footer__contacts-link footer__contacts-link--map">
+                    <i class="ri-map-pin-2-fill"></i>
+                    Санкт-Петербург
+                </a>
+            </li>
+            <li class="footer__contacts-item">
+                <a href="tel:79454444444" class="footer__contacts-link footer__contacts-link--phone">
+                    <i class="ri-phone-fill"></i>
+                    +7 945 444 44 44
+                </a>
+            </li>
+            <li class="footer__contacts-item">
+                <a href="mailto:info@life.com" class="footer__contacts-link footer__contacts-link--email">
+                    <i class="ri-mail-fill"></i>
+                    info@life.com
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

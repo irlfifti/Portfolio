@@ -1,0 +1,17 @@
+.footer {
+    background-color: #111; /* Темный фон подвала */
+    color: white;
+    position: relative; /* Прижимаем к низу */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.footer__contacts {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Центрируем содержимое */
+}

@@ -1,0 +1,20 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    line-height: 24px;
+    color: var(--foreground);
+    font-family: var(--ff-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+html.is-lock {
+    overflow:hidden;
+}
+
+@media screen and (max-width: 1140.98px) {
+    body {
+        font-size: 14px;
+        line-height: 1.15;
+    }
+}

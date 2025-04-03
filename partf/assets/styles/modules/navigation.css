@@ -1,0 +1,93 @@
+.navigation {
+    padding: 16px;
+    margin: 8px;
+    background-color: rgba(41, 26, 51, 0.74);
+    border-radius: var(--rounded-base);
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.navigation__menu {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 33%;
+    text-align: right;
+
+}
+
+.navigation__menu-item {
+    display: inline-block;
+    color: rgba(240, 72, 161, 0.74);
+    font-family: arial;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation__menu-link-contact:hover {
+    font-size: 21px;
+    color: rgba(240, 0, 69, 0.80);
+    transition: opacity 0.5s;
+}
+
+.navigation__menu-link-us:hover {
+    font-size: 21px;
+    color: rgba(240, 0, 69, 0.80);
+    transition: opacity 0.5s;
+}
+
+.navigation__menu-link-portfolio:hover {
+    font-size: 21px;
+    color: rgba(240, 0, 69, 0.80);
+    transition: opacity 0.5s;
+}
+
+.navigation__toggle {
+    display: none; /* Скрываем кнопку по умолчанию */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation__icon {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+}
+
+.navigation__menu {
+    display: flex;
+    flex-direction: row; /* Горизонтальное расположение в десктопной версии */
+}
+
+.navigation__menu--active {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение, когда меню активно */
+    position: absolute;
+    top: 60px; /* Расположение меню под заголовками */
+    right: 0;
+    background-color: rgba(1, 30, 40, 0.9); /* Полупрозрачный фон */
+    width: 200px; /* Ширина меню */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+.navigation__menu-item {
+    margin: 10px 0; /* Расстояние между элементами меню */
+}
+
+@media (max-width: 800px) {
+    .navigation {
+        display: flex;
+        max-width: 100%;
+        padding: 0;
+        margin: 8px;
+        font-size: 8px;
+
+    }
+}
